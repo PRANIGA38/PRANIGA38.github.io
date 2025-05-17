@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praniga Sengottaian - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar-brand span {
+            color: #FF7033;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #0ea5e9 !important;
+        }
+        .section {
+            padding: 4rem 0;
+        }
+        .card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .progress {
+            height: 0.5rem;
+        }
+        .bg-primary-custom {
+            background-color: #0ea5e9;
+        }
+        .text-primary-custom {
+            color: #0ea5e9;
+        }
+        .bg-secondary-custom {
+            background-color: #FF7033;
+        }
+        .text-secondary-custom {
+            color: #FF7033;
+        }
+        .btn-primary-custom {
+            background-color: #0ea5e9;
+            border-color: #0ea5e9;
+        }
+        .btn-primary-custom:hover {
+            background-color: #0284c7;
+            border-color: #0284c7;
+        }
+        .btn-outline-primary-custom {
+            border-color: #0ea5e9;
+            color: #0ea5e9;
+        }
+        .btn-outline-primary-custom:hover {
+            background-color: #0ea5e9;
+            color: white;
+        }
+        .hero-section {
+            background: linear-gradient(to bottom right, #f0f9ff, #bae6fd);
+            padding-top: 6rem;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#home">
+                <span class="text-secondary-custom">P</span>raniga S.
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#internships">Internships</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary-custom text-white px-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h1 class="display-4 fw-bold mb-3">
+                        <span class="text-primary-custom">Hi, I'm Praniga</span> Sengottaian
+                    </h1>
+                    <h2 class="fs-3 fw-medium text-muted mb-4">Java Full-Stack Developer</h2>
+                    <p class="lead text-muted mb-5">Aspiring developer with a passion for creating robust web applications. Specializing in Spring Boot, JavaScript, and database management with hands-on experience in multiple real-world projects.</p>
+                    <div class="d-flex gap-3">
+                        <a href="/assets/resume/Praniga_Resume_Updated.pdf" download class="btn btn-primary-custom px-4 py-2">
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary-custom px-4 py-2">
+                            <i class="fas fa-envelope me-2"></i>Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="position-relative d-inline-block">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-primary-custom to-secondary-custom rounded-circle opacity-75" style="filter: blur(10px);"></div>
+                        <div class="bg-white p-2 rounded-circle position-relative">
+                            <div class="w-75 h-auto rounded-circle overflow-hidden bg-gradient-to-br from-primary-100 to-primary-200 d-flex align-items-center justify-content-center mx-auto">
+                                <img src="/assets/images/profile .jpg" alt="PS" class="w-100 h-100 object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold position-relative d-inline-block">
+                    Education
+                    <span class="position-absolute bottom-0 start-0 w-100 h-25 bg-primary-100 opacity-50 transform rotate-n1"></span>
+                </h2>
+                <p class="text-muted mt-3">My academic journey and qualifications</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary-100 rounded-circle p-3 me-3">
+                                    <i class="fas fa-university text-primary-custom fs-4"></i>
+                                </div>
+                                <span class="badge bg-primary-100 text-primary-custom">2021 – 2025</span>
+                            </div>
+                            <h3 class="card-title fs-5 fw-semibold">Knowledge Institute of Technology</h3>
+                            <p class="card-text text-muted">B.E. Electrical and Electronics Engineering</p>
+                            <p class="fw-bold">CGPA 8.0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary-100 rounded-circle p-3 me-3">
+                                    <i class="fas fa-school text-primary-custom fs-4"></i>
+                                </div>
+                                <span class="badge bg-primary-100 text-primary-custom">2020 – 2021</span>
+                            </div>
+                            <h3 class="card-title fs-5 fw-semibold">J.K.K. Nataraja Matric Hr. Sec. School</h3>
+                            <p class="card-text text-muted">HSC (Maths Biology)</p>
+                            <p class="fw-bold">88%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary-100 rounded-circle p-3 me-3">
+                                    <i class="fas fa-graduation-cap text-primary-custom fs-4"></i>
+                                </div>
+                                <span class="badge bg-primary-100 text-primary-custom">2018 – 2019</span>
+                            </div>
+                            <h3 class="card-title fs-5 fw-semibold">Brindavan Matriculation School</h3>
+                            <p class="card-text text-muted">SSLC</p>
+                            <p class="fw-bold">88%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold position-relative d-inline-block">
+                    Projects
+                    <span class="position-absolute bottom-0 start-0 w-100 h-25 bg-primary-100 opacity-50 transform rotate-n1"></span>
+                </h2>
+                <p class="text-muted mt-3">Showcasing my technical skills through real-world applications</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="card-title fs-5 fw-semibold">Mobi-comm Web Application</h3>
+                                <div class="bg-primary-100 rounded-circle p-2">
+                                    <i class="fas fa-mobile-alt text-primary-custom"></i>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted mb-3">Developed a prepaid mobile recharge platform with user registration, OTP-based login, recharge processing, and admin plan management.</p>
+                            <div class="mb-3">
+                                <p class="fw-medium mb-2">Key Features:</p>
+                                <ul class="list-disc list-inside text-muted">
+                                    <li>Secure REST APIs with Spring Boot</li>
+                                    <li>JWT authentication</li>
+                                    <li>Twilio API integration for OTP verification</li>
+                                    <li>Responsive frontend design</li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <p class="fw-medium mb-2">Technologies:</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary-100 text-primary-custom">Spring Boot</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">MySQL</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">JavaScript</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">HTML/CSS</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">Twilio API</span>
+                                </div>
+                            </div>
+                            <p class="text-muted"><span class="fw-medium">Impact:</span> Gained experience in web development and API integration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="card-title fs-5 fw-semibold">IoT-Based Battery Management System</h3>
+                                <div class="bg-primary-100 rounded-circle p-2">
+                                    <i class="fas fa-battery-full text-primary-custom"></i>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted mb-3">Designed a system to monitor battery temperature and power for EV and renewable energy applications, displayed on an LCD.</p>
+                            <div class="mb-3">
+                                <p class="fw-medium mb-2">Key Features:</p>
+                                <ul class="list-disc list-inside text-muted">
+                                    <li>Real-time temperature monitoring</li>
+                                    <li>Power consumption tracking</li>
+                                    <li>Data visualization on LCD display</li>
+                                    <li>MQTT for real-time data transmission</li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <p class="fw-medium mb-2">Technologies:</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary-100 text-primary-custom">C</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">Arduino</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">MySQL</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">MQTT</span>
+                                </div>
+                            </div>
+                            <p class="text-muted"><span class="fw-medium">Impact:</span> Learned the importance of real-time data monitoring and visualization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="card-title fs-5 fw-semibold">Online VolunteerMatch Website</h3>
+                                <div class="bg-primary-100 rounded-circle p-2">
+                                    <i class="fas fa-hands-helping text-primary-custom"></i>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted mb-3">Built a platform connecting volunteers and social workers, featuring event coordination, chat, and fundraising capabilities.</p>
+                            <div class="mb-3">
+                                <p class="fw-medium mb-2">Key Features:</p>
+                                <ul class="list-disc list-inside text-muted row row-cols-1 row-cols-md-2">
+                                    <li class="col">User registration and profile management</li>
+                                    <li class="col">Event creation and coordination</li>
+                                    <li class="col">Real-time chat functionality</li>
+                                    <li class="col">Fundraising campaign management</li>
+                                    <li class="col">Search and match algorithm</li>
+                                    <li class="col">Responsive design for all devices</li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <p class="fw-medium mb-2">Technologies:</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary-100 text-primary-custom">JavaScript</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">HTML/CSS</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">Angular</span>
+                                </div>
+                            </div>
+                            <p class="text-muted"><span class="fw-medium">Impact:</span> Made a dummy website using Angular.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold position-relative d-inline-block">
+                    Skills
+                    <span class="position-absolute bottom-0 start-0 w-100 h-25 bg-primary-100 opacity-50 transform rotate-n1"></span>
+                </h2>
+                <p class="text-muted mt-3">Technical expertise and capabilities</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="fs-5 fw-semibold mb-4"><i class="fas fa-code text-primary-custom me-2"></i>Programming</h3>
+                            <div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Core Java</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary-custom" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>C Basics</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary-custom" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="fs-5 fw-semibold mb-4"><i class="fas fa-laptop-code text-primary-custom me-2"></i>Web Development</h3>
+                            <div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>HTML/CSS</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary-custom" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Spring Boot</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary-custom" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="fs-5 fw-semibold mb-4"><i class="fas fa-database text-primary-custom me-2"></i>Database</h3>
+                            <div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>MySQL</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary-custom" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="fs-5 fw-semibold mb-4"><i class="fas fa-tools text-primary-custom me-2"></i>Tools</h3>
+                            <div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Git</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary-custom" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Postman</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary-custom" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold position-relative d-inline-block">
+                    Certifications
+                    <span class="position-absolute bottom-0 start-0 w-100 h-25 bg-primary-100 opacity-50 transform rotate-n1"></span>
+                </h2>
+                <p class="text-muted mt-3">Professional qualifications and achievements</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="bg-primary-100 rounded-circle p-4 d-inline-block mb-3">
+                                <i class="fab fa-google text-primary-custom fs-3"></i>
+                            </div>
+                            <h3 class="card-title fs-6 fw-semibold">Google UX Design</h3>
+                            <p class="card-text text-muted">Coursera</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="bg-primary-100 rounded-circle p-4 d-inline-block mb-3">
+                                <i class="fas fa-industry text-primary-custom fs-3"></i>
+                            </div>
+                            <h3 class="card-title fs-6 fw-semibold">Industry 4.0 and Industrial IoT</h3>
+                            <p class="card-text text-muted">NPTEL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="bg-primary-100 rounded-circle p-4 d-inline-block mb-3">
+                                <i class="fas fa-cloud text-primary-custom fs-3"></i>
+                            </div>
+                            <h3 class="card-title fs-6 fw-semibold">Cloud Computing</h3>
+                            <p class="card-text text-muted">NPTEL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="bg-primary-100 rounded-circle p-4 d-inline-block mb-3">
+                                <i class="fas fa-bookmark text-primary-custom fs-3"></i>
+                            </div>
+                            <h3 class="card-title fs-6 fw-semibold">Communicating Skills</h3>
+                            <p class="card-text text-muted">TCS ion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold position-relative d-inline-block">
+                    Achievements
+                    <span class="position-absolute bottom-0 start-0 w-100 h-25 bg-primary-100 opacity-50 transform rotate-n1"></span>
+                </h2>
+                <p class="text-muted mt-3">Recognition and accomplishments</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex">
+                            <div class="bg-primary-100 rounded-circle p-2 me-3">
+                                <i class="fas fa-trophy text-primary-custom"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title fs-6 fw-semibold">Winner - National level Mega Hackathon 2024</h3>
+                                <p class="card-text text-muted">Developed an innovative Hybrid and Renewable EV wireless charging station, winning first place among 50+ teams with Rs.5000 cash prize.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex">
+                            <div class="bg-primary-100 rounded-circle p-2 me-3">
+                                <i class="fas fa-medal text-primary-custom"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title fs-6 fw-semibold">2nd Place - Winner - National level Symposium 2023</h3>
+                                <p class="card-text text-muted">Presented our project "Floating solar panel tracking system" at KSR Institute, Namakkal, TN.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex">
+                            <div class="bg-primary-100 rounded-circle p-2 me-3">
+                                <i class="fas fa-code text-primary-custom"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title fs-6 fw-semibold">2nd Place - Winner - National level Mega Hackathon 2024</h3>
+                                <p class="card-text text-muted">Received Rs.3000 cash prize for Idea Pitching on the topic of <b>"CAM-ATM"</b> at Vivekanandha Institute, Namakkal, TN.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex">
+                            <div class="bg-primary-100 rounded-circle p-2 me-3">
+                                <i class="fas fa-star text-primary-custom"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title fs-6 fw-semibold">Archiver Award 2023 & 2024</h3>
+                                <p class="card-text text-muted">Received Archiver Award in both 2023 and 2024 academic years for participating in outer college Hackathons and project presentations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="section bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold position-relative d-inline-block">
+                    Internships
+                    <span class="position-absolute bottom-0 start-0 w-100 h-25 bg-primary-100 opacity-50 transform rotate-n1"></span>
+                </h2>
+                <p class="text-muted mt-3">Professional experience and hands-on training</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3">
+                                <h3 class="card-title fs-5 fw-semibold">Java Full-Stack Developer Intern</h3>
+                                <span class="badge bg-primary-100 text-primary-custom">Nov 2024 - Apr 2025</span>
+                            </div>
+                            <h4 class="fs-6 text-muted mb-3">Smartcliff</h4>
+                            <p class="text-muted mb-3">Working on enterprise-level web applications using Spring Boot, HTML, CSS, JS, and MySQL. Contributing to both backend and frontend development.</p>
+                            <div class="mb-3">
+                                <p class="fw-medium mb-2">Responsibilities:</p>
+                                <ul class="list-disc list-inside text-muted">
+                                    <li>Designing and implementing RESTful APIs</li>
+                                    <li>Developing responsive UI components</li>
+                                    <li>Writing unit tests with JUnit and Mockito</li>
+                                    <li>Database design and optimization</li>
+                                    <li>Collaborating with cross-functional teams</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="fw-medium mb-2">Technologies Used:</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary-100 text-primary-custom">Spring Boot</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">HTML/CSS</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">MySQL</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">Git</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3">
+                                <h3 class="card-title fs-5 fw-semibold">FrontEnd Developer Intern</h3>
+                                <span class="badge bg-primary-100 text-primary-custom">Jul - Sep 2024</span>
+                            </div>
+                            <h4 class="fs-6 text-muted mb-3">ICT Academy powered by Capgemini</h4>
+                            <p class="text-muted mb-3">Assisted in developing frontend components for Service website and collaborated on UI/UX improvements.</p>
+                            <div class="mb-3">
+                                <p class="fw-medium mb-2">Responsibilities:</p>
+                                <ul class="list-disc list-inside text-muted">
+                                    <li>Creating responsive UI components</li>
+                                    <li>Implementing client requirements</li>
+                                    <li>Troubleshooting UI bugs</li>
+                                    <li>Mobile-first design implementation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="fw-medium mb-2">Technologies Used:</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary-100 text-primary-custom">HTML/CSS</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">Angular</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">Bootstrap</span>
+                                    <span class="badge bg-primary-100 text-primary-custom">GitHub</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-primary-custom text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold position-relative d-inline-block">
+                    Get In Touch
+                    <span class="position-absolute bottom-0 start-0 w-100 h-25 bg-primary-500 opacity-50 transform rotate-n1"></span>
+                </h2>
+                <p class="text-primary-100 mt-3">Interested in working together? Drop me a message!</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="bg-primary-100 rounded-circle p-3 d-inline-block mb-3">
+                                <i class="fas fa-envelope text-primary-custom fs-4"></i>
+                            </div>
+                            <h3 class="fs-6 fw-semibold mb-2">Email</h3>
+                            <a href="mailto:praniga.s@gmail.com" class="text-primary-custom">praniga.s.eee@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="bg-primary-100 rounded-circle p-3 d-inline-block mb-3">
+                                <i class="fas fa-phone text-primary-custom fs-4"></i>
+                            </div>
+                            <h3 class="fs-6 fw-semibold mb-2">Phone</h3>
+                            <a href="tel:+919876543210" class="text-primary-custom">+91 87543 66453</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="bg-primary-100 rounded-circle p-3 d-inline-block mb-3">
+                                <i class="fas fa-map-marker-alt text-primary-custom fs-4"></i>
+                            </div>
+                            <h3 class="fs-6 fw-semibold mb-2">Location</h3>
+                            <p class="text-muted">Salem, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h3 class="fs-4 fw-semibold text-center mb-4">Send Me a Message</h3>
+                    <div id="contact-form">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Priya" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="priya@example.com" class="form-control">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message here..." class="form-control"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary-custom px-4 py-2">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <h3 class="fs-5 fw-semibold mb-4">Connect With Me</h3>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://linkedin.com/in/praniga-s" target="_blank" class="btn btn-light rounded-circle text-primary-custom"><i class="fab fa-linkedin-in fs-5"></i></a>
+                    <a href="https://github.com/PRANIGA38" target="_blank" class="btn btn-light rounded-circle text-primary-custom"><i class="fab fa-github fs-5"></i></a>
+                    <a href="https://twitter.com/praniga_s" target="_blank" class="btn btn-light rounded-circle text-primary-custom"><i class="fab fa-twitter fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="fs-4 fw-bold">
+                        <span class="text-secondary-custom">P</span>raniga S.
+                    </span>
+                    <p class="text-white mt-1">Java Full-Stack Developer</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#home" class="text-white me-3">Home</a>
+                    <a href="#projects" class="text-white me-3">Projects</a>
+                    <a href="#skills" class="text-white me-3">Skills</a>
+                    <a href="#contact" class="text-white">Contact</a>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-3 border-top border-secondary">
+                <p class="text-white">© 2025 Praniga Sengottaian. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top btn btn-primary-custom rounded-circle">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Form submission (prevent default for demo)
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
