@@ -76,27 +76,37 @@
         .back-to-top.visible {
             opacity: 1;
         }
-        .profile-img-wrapper {
-    width: 260px;        /* desktop size */
-    height: 260px;
+       .profile-img-wrapper {
+    width: 360px;      /* BIG & confident */
+    height: 360px;
+    border-radius: 50%;
 }
 
 .profile-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* prevents stretching */
+    object-fit: cover;
     border-radius: 50%;
 }
 
-/* Mobile optimization */
-@media (max-width: 768px) {
+/* Tablet */
+@media (max-width: 992px) {
     .profile-img-wrapper {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .profile-img-wrapper {
+        width: 240px;
+        height: 240px;
     }
 }
 .profile-img-wrapper {
-    box-shadow: 0 0 40px rgba(14, 165, 233, 0.35);
+    border: 6px solid #ffffff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -150,13 +160,13 @@
                     <div class="position-relative d-inline-block">
                         <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-primary-custom to-secondary-custom rounded-circle opacity-75" style="filter: blur(10px);"></div>
                         <div class="bg-white p-2 rounded-circle position-relative">
-                            <div class="profile-img-wrapper mx-auto overflow-hidden bg-white shadow">
-                            <img 
-                             src="/assets/images/Photo.jpeg" 
-                             alt="Praniga S - Java Full Stack Developer" 
-                             class="profile-img"
-                            />
-                        </div>
+                            <div class="profile-img-wrapper mx-auto shadow">
+                         <img 
+                         src="/assets/images/Photo.jpeg" 
+                         alt="Praniga S - Java Full Stack Developer" 
+                           class="profile-img"
+                         />
+                         </div>
                         </div>
                     </div>
                 </div>
