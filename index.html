@@ -76,6 +76,26 @@
         .back-to-top.visible {
             opacity: 1;
         }
+        .profile-img-wrapper {
+    width: 260px;        /* desktop size */
+    height: 260px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* prevents stretching */
+    border-radius: 50%;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .profile-img-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -126,9 +146,14 @@
                     <div class="position-relative d-inline-block">
                         <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-primary-custom to-secondary-custom rounded-circle opacity-75" style="filter: blur(10px);"></div>
                         <div class="bg-white p-2 rounded-circle position-relative">
-                            <div class="w-75 h-auto rounded-circle overflow-hidden bg-gradient-to-br from-primary-100 to-primary-200 d-flex align-items-center justify-content-center mx-auto">
-                                <img src="/assets/images/Photo.jpeg" alt="PS" class="w-100 h-100 object-cover" />
-                            </div>
+                            <div class="profile-img-wrapper mx-auto overflow-hidden bg-white shadow">
+    <img 
+        src="/assets/images/Photo.jpeg" 
+        alt="Praniga S - Java Full Stack Developer" 
+        class="profile-img"
+    />
+</div>
+
                         </div>
                     </div>
                 </div>
